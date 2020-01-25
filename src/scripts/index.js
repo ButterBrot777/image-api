@@ -162,12 +162,12 @@ canvasResolution.addEventListener('click', e => {
 load.addEventListener('click', () => {
   const city = cityChoiseInpit.value;
   ctx.clearRect(0, 0, canvas.width, canvas.height);
-  // app.getLinkToImage(city);
+  app.getLinkToImage(city);
   // when limit on unsplash.com ends this block of code can help to view functionality
-  const url =
-    'https://image.shutterstock.com/z/stock-vector-vector-illustration-in-simple-flat-linear-style-with-smiling-cartoon-characters-teamwork-and-1369217765.jpg';
+  // const url =
+  //   'https://image.shutterstock.com/z/stock-vector-vector-illustration-in-simple-flat-linear-style-with-smiling-cartoon-characters-teamwork-and-1369217765.jpg';
 
-  app.downloadImage(url);
+  // app.downloadImage(url);
   localStorage.removeItem('isImgLoaded');
   localStorage.setItem('isImgLoaded', 'true');
 });
